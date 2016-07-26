@@ -1,0 +1,10 @@
+mobile/site/pro_list.php Line10Ìæ»»Îª£º
+
+    <div class="row">
+        {foreach:items=search_goods::getOrderType()}
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center sel"
+             onclick="window.location.href='{echo:search_goods::searchUrl(array('order','by'),array($key,search_goods::getOrderBy($key)))}';">
+            {$item}
+        </div>
+        {/foreach}
+    </div>
